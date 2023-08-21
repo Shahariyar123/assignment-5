@@ -28,13 +28,9 @@
 
         <!-- container -->
         <section>
-            <h1 class="text-3xl font-bold">Kitchenware</h1>
-
+            <h1 class="text-3xl font-bold ml-16">Kitchenware</h1>
             <div class="flex flex-col lg:flex-row">
-                <!-- shape container -->
                 <div class="flex-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-                    <!-- <div><h1 class="text-3xl font-bold">Kitchenware</h1></div> -->
-
                     <div class="card w-96 bg-base-100 blur-md invert drop-shadow-xl md:filter-none ">
                         <figure class="px-10 pt-10">
                             <img src="./images/prod1.png" alt="Shoes" class="rounded-xl" />
@@ -110,9 +106,58 @@
 
 
 
-                    <!-- <section class=""><h1 class="text-3xl font-bold ">Sportswear</h1></section> -->
+                </div>
 
 
+
+                <!-- Have coupon -->
+
+
+                <div class="p-12 items-center text-black-800 text-xl">
+                    <h1 class="text-center mb-2">Have coupon?</h1>
+                    <input type="text" class="p-2 border" id="coupon-input">
+                    <button class="btn bg-rose-400 text-white rounded-lg"
+                        onclick="applyDiscountIfNeeded()">Apply</button>
+
+                    <div id="select-item">
+
+
+
+
+
+                    </div>
+                    <div class="mt-4">
+                        <h1 class="p-2">Total price: <span id="Total-price">00.00</span>TK</h1>
+                        <h2 class="p-2">Discount: <span id="discount-total">00.00</span>TK</h2>
+                        <h3 class="p-2">Total: <span id="main-price">00.00</span>TK</h3>
+                        <!-- The button to open modal -->
+                        <a href="#my_modal_8" class="btn ml-4  p-2 bg-rose-400 text-white rounded-lg">Make
+                            Purchase</a>
+
+                        <div class="modal" id="my_modal_8">
+                            <div class="modal-box">
+                                <img class="ml-36" src="./images/congo.png" alt="">
+                                <h3 class="font-bold text-2xl ml-36">Congratulations</h3>
+                                <p class="py-4 ml-16 text-center">Purchase Completed</p>
+                                <div class="modal-action items-center">
+                                    <a href="#" class="btn p-2 bg-rose-400 text-white rounded-lg mr-48" id="go-home"
+                                        onclick="resetAllMoney()">Go Home</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </section>
+        <section>
+
+            <h1 class="text-3xl font-bold ml-16">Sportswear</h1>
+
+            <div class="flex flex-col lg:flex-row ">
+                <div class="flex-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
                     <div class="card w-96 bg-base-100 blur-md invert drop-shadow-xl md:filter-none ">
                         <figure class="px-10 pt-10">
                             <img src="./images/prod4.png" alt="Shoes" class="rounded-xl" />
@@ -180,46 +225,19 @@
                             </button>
                         </div>
                     </div>
-
-
-
                 </div>
-
                 <!-- Have coupon -->
 
 
-                <div class="p-12 items-center text-black-800 text-xl">
-                    <h1 class="text-center mb-2">Have coupon?</h1>
-                    <input type="text" class="p-2 border" id="coupon-input">
-                    <button class="btn bg-rose-400 text-white rounded-lg"
-                        onclick="applyDiscountIfNeeded()">Apply</button>
-                    <div id="select-item">
-
-
-
-
-
-                    </div>
-                    <div class="mt-4">
-                        <h1 class="p-2">Total price: <span id="Total-price">00.00</span>TK</h1>
-                        <h2 class="p-2">Discount: <span id="discount-total">00.00</span>TK</h2>
-                        <h3 class="p-2">Total: <span id="main-price">00.00</span>TK</h3>
-                        <!-- The button to open modal -->
-                        <a href="#my_modal_8" class="btn ml-4  p-2 bg-rose-400 text-white rounded-lg">Make Purchase</a>
-
-                        <div class="modal" id="my_modal_8">
-                            <div class="modal-box">
-                                <img class="ml-36" src="./images/congo.png" alt="">
-                                <h3 class="font-bold text-2xl ml-36">Congratulations</h3>
-                                <p class="py-4 ml-16 text-center">Purchase Completed</p>
-                                <div class="modal-action items-center">
-                                    <a href="#" class="btn p-2 bg-rose-400 text-white rounded-lg mr-48" id="go-home"
-                                        onclick="resetAllMoney()">Go Home</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+            <div class="mr=">
+            
+                <div>
+                    
                 </div>
+                <div>
+                    
+                </div>
+            </div>
             </div>
         </section>
     </main>
