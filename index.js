@@ -30,17 +30,10 @@ console.log('total')
 const count =total-discount;
 const mainPrice = (document.getElementById('main-price').innerText =  count )
 } 
-
-
+function resetAllMoney(ih){
+  console.log('hosce')
 }
-function updateInput(){
-  //get the current amount from the 'discount' field
-  var discount = document.getElementsByName("discount")[0].value;
-  //get the current amount from the 'price' field
-  var currentPrice = document.getElementsByName("price")[0].value;
-  //new price should be "old price" - "discount%" * "old price"
-  document.getElementsByName("price")[0].value =  currentPrice - ((discount/100) * currentPrice);
-}
+ };
 
 
 
